@@ -45,10 +45,10 @@ jobs:
         with:
           args: sushi -v 
 
-      - name: Check pwd
+      - name: Force update sushi
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: pwd
+          args: npm install -g fsh-sushi 
 
 
 
