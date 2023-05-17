@@ -43,7 +43,9 @@ jobs:
       - name: Check Sushi version
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: sushi -v && pwd
+          args: |
+            sushi -v 
+            pwd
 
 
 
